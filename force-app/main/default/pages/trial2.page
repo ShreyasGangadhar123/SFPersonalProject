@@ -1,0 +1,16 @@
+<apex:page standardController="Contact" recordSetVar="contacts">
+    <apex:pageBlock title="Contacts List">
+         <apex:form >
+                <apex:commandLink value="https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_styling_salesforce_identifying_theme.htm">Link test</apex:commandLink>
+            </apex:form>
+        <!-- Contacts List -->
+        <apex:pageBlockTable value="{! contacts }" var="ct">
+            <apex:column value="{! ct.FirstName }"/>
+            <apex:column value="{! ct.LastName }"/>
+            <apex:column value="{! ct.Email }"/>
+            <apex:column value="{! ct.Account.Name }"/>
+           
+            
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

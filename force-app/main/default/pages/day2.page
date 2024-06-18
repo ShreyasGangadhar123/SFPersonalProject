@@ -1,0 +1,12 @@
+<apex:page >
+    <apex:PanelBar >
+        <apex:panelBarItem label="Item1" onenter="alert('Entering Item 1')" onleave="alert('Leaving Item 1')" >Oof</apex:panelBarItem>
+        <apex:panelBarItem label="Item 2" onenter="alert('Entering Item 2')" onleave="alert('Leaving Item 2')">Work hard</apex:panelBarItem>
+        <apex:panelBarItem label="Item 3" onenter="alert('Entering Item 3')" onleave="alert('Leaving Item 3')">No Stopping</apex:panelBarItem>
+    </apex:PanelBar>
+    <apex:pageBlock > 
+    <apex:pageBlockButtons >
+        <apex:outputLink value="https://www.youtube.com/watch?v=huZhwUXEndw&list=PLdYQMTciVWO-_J9HB2NB-TApIornE33Sl&index=11"> Jump to</apex:outputLink>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+</apex:page>

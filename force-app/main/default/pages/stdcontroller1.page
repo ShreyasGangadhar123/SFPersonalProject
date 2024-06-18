@@ -1,0 +1,16 @@
+<apex:page standardController="Account" recordSetVar="Accounts">
+   <apex:pageBlock Title="Account List" mode="edit">
+      <apex:pageBlockTable value="{!Accounts}" var="al">
+          <apex:column value="{! al.Name}"/>
+          <apex:column value="{! al.Type}"/>
+          <apex:column value="{! al.OwnerId}"/>
+          <apex:column value="{! al.Active__c}"/>
+         
+       </apex:pageBlockTable>
+       <apex:pageBlockButtons >
+           <apex:form >
+       <apex:commandButton action="save" value="save"/>
+               </apex:form>
+       </apex:pageBlockButtons>
+    </apex:pageBlock>
+</apex:page>

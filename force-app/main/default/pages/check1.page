@@ -1,0 +1,34 @@
+<apex:page >
+    <apex:pageBlock title="FirstBlock">
+        <apex:pageBlockSection title="First Section">
+            <apex:pageBlockSectionItem >
+            You will
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+            You can
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+            You shall
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Second Section">
+            <apex:pageBlockSectionItem >
+            Preping
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+            For
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+            It
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        
+        
+            <apex:form >
+            <apex:commandButton value="Save"/>
+            <apex:commandButton value="cancel"/> 
+                </apex:form>
+            
+        <apex:pageMessage summary="First time doing it" severity="info" strength="1"></apex:pageMessage>
+    </apex:pageBlock>
+</apex:page>

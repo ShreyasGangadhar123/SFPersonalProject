@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	Hello World
+    <p class="FirstPara">Hi everyone</p>
+    <lightning:button label="Login" variant="Brand"/>
+    <lightning:button label="Sign up" variant="Base"/>
+    <lightning:button label="Login" variant="Brand-outline"/>
+    <lightning:button label="Log out" variant="destructive"/>
+    <lightning:button label="Sign out" variant="destructive-text"/>
+    <lightning:button label="Login" variant="inverse"/>
+    <lightning:button label="Yay" variant="Success"/>
+    <lightning:formattedText value="Hey first"/>
+</aura:component>

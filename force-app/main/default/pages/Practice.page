@@ -1,0 +1,13 @@
+<apex:page standardController="Opportunity" recordSetVar="opports">
+    <apex:pageBlock >
+         <apex:pageBlockSection >
+                <apex:outputText value="First Line" id="one" label="one" > this is printing</apex:outputText>
+          </apex:pageBlockSection>
+        <apex:pageBlockTable value="{!opports}" var="op">
+            <apex:column value="{!op.Name}"/>
+            <apex:column value="{!op.OwnerId}"/>
+            <apex:column value="{!op.StageName}"/>
+            <apex:column value="{!op.IsPrivate}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

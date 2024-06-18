@@ -1,0 +1,24 @@
+<apex:page controller="CandidateController" showHeader="false" sidebar="false">
+    <apex:form >
+            <apex:pageBlock id="refresh">
+            <apex:pageBlockSection columns="1">
+            <h1> Enter candidate details </h1>
+                <apex:pageMessages ></apex:pageMessages>
+           <apex:inputtext label="FirstName"  value="{!cand.First_Name__c}" required="true"/>
+               <apex:inputtext label="LastName"  value="{!cand.Last_Name__c}" required="true"/>
+                 <apex:inputtext label="Email"  value="{!cand.Email__c}"/>
+                <apex:inputField label="Education" value="{!cand.Education__c}" />
+                 <apex:inputtext label="City"  value="{!cand.City__c}"/>
+                 <apex:inputtext label="Country"  value="{!cand.Country__c}"/>
+                 <apex:inputtext value="{!cand.Phone__c}"/>
+                <apex:inputtext label="StreetAddress1"  value="{!cand.Street_Address_1__c}"/>
+                <apex:inputtext label="StreetAddress1"  value="{!cand.Street_Address_1__c}"/>
+                <apex:inputtext label="State/Province"  value="{!cand.State_Province__c}"/>
+                <apex:inputtext label="Zip/Postalcode"  value="{!cand.Zip_Postal_Code__c}"/>
+            </apex:pageBlockSection>
+                <apex:pageBlockButtons location="bottom">
+            <apex:commandButton action="{!insertCandidate}" value="Insert" reRender="refresh" />
+                    </apex:pageBlockButtons>
+            </apex:pageBlock>
+            </apex:form>
+</apex:page>

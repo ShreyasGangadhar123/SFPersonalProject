@@ -1,0 +1,19 @@
+<apex:page standardController="Account" recordSetVar="accounts">
+    <apex:form >
+       <h1>
+           Please fill the below details:
+        </h1><br/>
+        Enter Name:<apex:inputText id="name"/><br/>
+        Enter Age:<apex:inputText id="age"/><br/>
+        Set a username:<apex:inputText id="username"/><br/>
+        Enter a password:<apex:inputSecret id="password"/><br/>
+        Cover Letter: <apex:inputTextarea id="coverLetter" /><br/>
+        Are you currently employeed: <apex:inputCheckbox id="employee"/><br/>
+        <apex:commandButton value="Save" action="{!save}"/>
+    </apex:form>
+    <apex:pageBlock >
+         <apex:pageBlockTable value="{!accounts}" var="at">
+             <apex:column value="{!at.Name}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

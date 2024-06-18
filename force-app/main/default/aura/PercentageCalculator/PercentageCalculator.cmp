@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <aura:attribute name="Number1" type="integer" access="public"/>
+    <aura:attribute name="Percentage" type="integer" access="public"/>
+    
+    <!-- Will take inputs one numebr and the other % -->
+    
+    <div class="slds-p-around_medium">
+          <lightning:input type="number" name="input1" label="Enter a number" value="{!v.Number1}" />
+          <lightning:input type="number" name="input2" label="Number field with percentage formatter" value="{!v.Percentage}" formatter="percent-fixed"/>
+        {!v.Number1}<br/>
+         {!v.Percentage}
+    </div>
+    <div>
+        {!div(Mult(v.Number1,v.Percentage),100)}
+    </div>
+</aura:component>

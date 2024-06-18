@@ -1,0 +1,7 @@
+<apex:page sidebar="false">
+    First name of the logged : {! $User.FirstName } <br/><br/>
+    Last name: {! $User.LastName } <br/><br/>
+    Username: {! $User.username } <br/><br/>
+    Thank you{! $User.firstname & ' ' & $user.lastname} <br/><br/>
+    Today's date: {! Today() }
+</apex:page>

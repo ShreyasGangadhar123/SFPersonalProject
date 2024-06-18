@@ -1,0 +1,11 @@
+<apex:page >
+    <apex:form > 
+       <apex:outputLabel value="Enter Name: " ></apex:outputLabel>
+        <apex:inputText id="name"/><br/><br/>
+        <apex:outputLabel value="Enter UserName: " ></apex:outputLabel>
+        <apex:inputText id="uname"/><br/><br/>
+        <apex:outputLabel value="Enter Password: " ></apex:outputLabel>
+        <apex:inputSecret id="pswd"/><br/><br/>
+        <apex:outputLink value="https://www.youtube.com/watch?v=huZhwUXEndw&list=PLdYQMTciVWO-_J9HB2NB-TApIornE33Sl&index=11">Salesforce Tutorial</apex:outputLink>
+        </apex:form>
+</apex:page>
