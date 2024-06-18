@@ -1,9 +1,8 @@
 <project name="Sample usage of Salesforce Ant tasks" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
-<property>
+    <property file="build.properties"/>
 
-<file>build.properties</file>
-<environment>env</environment>
-</property>
+    <property environment="env"/>
+    
 
 <target name="deployall">
 
