@@ -9,7 +9,7 @@
 <environment>env</environment>
 </property>
 
-<target name=”deployall”>
+<target name="”deployall”">
 
 <sf:deploy username=”${sf.username}” password=”${sf.password}” serverurl=”${sf.serverurl}” testlevel=”NoTestRun” logtype=”Detail” deployRoot=”force-app”/>
 
