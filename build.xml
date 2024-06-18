@@ -1,8 +1,4 @@
-<project>
-     <name>Sample usage of Salesforce Ant tasks</name> 
-     <default>test</default>
-     <basedir>xmlns:sf=antlib:com.salesforce</basedir>
-
+<project name="Sample usage of Salesforce Ant tasks" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
 <property>
 
 <file>build.properties</file>
@@ -11,7 +7,7 @@
 
 <target name="deployall">
 
-<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app">
+<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app"/>
 
 </target>
 
