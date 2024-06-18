@@ -3,7 +3,7 @@ public with sharing class AccountTriggerHandler1 {
                System.debug('accList='+accList);
                Map<Id,Account> accMap= new Map<Id,Account>([Select Id,Name From Account]);
                System.debug('accMap='+accMap);
-               System.debug('accMap.size()='+accMap.size());
+               System.debug('accMap.size()='+accMap.size()); //removedebug
                for(Account acc: accList)  //Iterating over the new record values
                {
                   if(acc.Phone==null)

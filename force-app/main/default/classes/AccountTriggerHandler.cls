@@ -4,7 +4,7 @@ public class AccountTriggerHandler {
          for(Account acc: newList)
          {
              if(acc.Industry !=null && acc.Industry=='Media')
-             acc.Rating= 'Hot';
+             acc.Rating= 'Hot'; //rating
          }
      }
     public static void createRelatedOpp(List<Account> newList)
