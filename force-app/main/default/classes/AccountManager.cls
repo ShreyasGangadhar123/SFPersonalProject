@@ -1,7 +1,7 @@
 @RestResource(urlMapping='/Accounts/*/contacts')
 global with sharing class AccountManager{
     @HttpGet
-    global static Account getAccount(){
+    global static Account getAccount(){ //deploycheck
         RestRequest request = RestContext.request;
         String accountId = request.requestURI.substringBetween('Accounts/','/contacts');
         system.debug(accountId);
