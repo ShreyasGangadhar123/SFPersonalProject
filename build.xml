@@ -3,13 +3,15 @@
      <default>test</default>
      <basedir>xmlns:sf=antlib:com.salesforce</basedir>
 
-<property file=”build.properties”/>
-
-<property environment=”env”/>
+<property>
+<file>build.properties</file>
+<environment>env</environment>
+</property>
 
 <! — Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization’s namespace only →
 
-<target name=”deployall”>
+<target> 
+    <name>deployall</name>
 
 <sf:deploy username=”${sf.username}” password=”${sf.password}” serverurl=”${sf.serverurl}” testlevel=”NoTestRun” logtype=”Detail” deployRoot=”force-app”/>
 
