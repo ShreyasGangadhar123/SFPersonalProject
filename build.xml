@@ -1,4 +1,7 @@
-<project name =”Sample usage of Salesforce Ant tasks default=test basedir=. xmlns:sf=antlib:com.salesforce”>
+<project>
+     <name>Sample usage of Salesforce Ant tasks</name> 
+     <default>test</default>
+     <basedir>xmlns:sf=antlib:com.salesforce</basedir>
 
 <property file=”build.properties”/>
 
